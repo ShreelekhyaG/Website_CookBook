@@ -1,0 +1,55 @@
+.*,*::before, *::after{
+	margin:0;
+	box-sizing: border-box;
+}
+header{
+    overflow: auto;
+    position: fixed;
+ 	box-sizing: border-box;
+ 	top:0;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+h1{
+    margin:0px;
+	/*background: url(../images/org_logo.resized.png) no-repeat;
+	text-indent: -9999px;*/
+	min-width: 40%;
+	height: 43px;
+	float: left;
+}
+nav{
+	width: 60%;
+	float: right;
+	height: 50px;
+}
+nav ul{
+	display: flex;
+	margin: 0;
+	padding: 0 100px;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	display: block;
+	color: rgba(0,0,0,.8);
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+nav ul li a:hover{
+	background: rgba(0,0,0,.1);
+}
+.hero{
+	background-image: ../images/cook2.jpeg;
+	background: url(../images/cook2.jpeg) no-repeat;
+}
+.col{
+	display: flex;
+	margin-top: 200px;
+}
