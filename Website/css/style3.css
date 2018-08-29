@@ -16,32 +16,24 @@ body {
 html{
   height: 100%;
 }
-footer section{
-  position: relative;
-  display: inline;
-  background: rgba(255,240,245);
+/* Footer part starts */
+footer{
+  background: rgb(255,240,245);
+  flex-direction: column;
 }
 .links{
   flex: 2;
   justify-content: center;
 }
+.links ul{
+  list-style: none;
+}
 .media{
   flex: 1;
-  align-items: right;
-  justify-content: left;
+  justify-content: flex-start;
   display: flex;
   align-items: center;
   padding-left: 20px;
-}
-.links ul li{
-  display: inline;
-}
-.links ul li:after{
-  padding: 10px;
-  content:'|';
-}
-.links ul li:last-child:after{
-  content: none;
 }
 footer a{
   display: inline;
@@ -55,56 +47,143 @@ footer a{
   font-size: 20px;
   position: relative;  
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 405px){
+
+.links ul li{
+  display: inline;
+}
+.links ul li:after{
+  padding: 10px;
+  content:'|';
+}
+.links ul li:last-child:after{
+  content: none;
+}
+}
+@media screen and (min-width: 650px){
+footer{
+  flex-direction: row;
+}
+}
+/* Footer part ends */
+@media screen and (min-width: 550px){
   footer{
    display: flex;
   }
   .container1 {
     display: flex;
   }
- .container2 {
+  .container2 {
     display: flex;
-    justify-content: space-between;
-  } 
+  }
 }
+@media screen and (max-width: 550px){
+ .box-3{
+    min-width: 50%;
+    max-width: 50%;
+  }
+  /*.fig2{
+    max-width: 50%;
+    float: left;
+    padding: 10px;
+    padding-left: 15px;
+  }
+  .content, .h3 .caption2{
+    padding-top: 0;
+    text-align: justify-all;
+  }*/
+  /*.box-2{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+  .content{
+    flex:1;
+    padding: 0;
+  }
+  .fig2{
+    max-width: 50%;
+    max-height: 50%;
+    flex:1;
+    flex-shrink: 2;
+  }*/
+}
+@media screen and (min-width: 475px) and (max-width: 550px){
+ 
+  .fig2{
+    max-width: 50%;
+    float: left;
+    padding: 10px;
+    padding-left: 15px;
+  }
+  .content, .h3 .caption2{
+    padding-top: 0;
+    text-align: justify-all;
+  }
+  }
+
+.container2 {
+    flex-wrap: wrap;
+  } 
 .container3 {
     display: flex;
     flex-wrap: wrap;
   }
-.container2 div {
+.box-2 {
   border: 12px solid white;
-  position: relative;
-  display: inline-block;
   padding: 10px;
   background: rgba(0,0,0,.2);
+  flex: 1;
+  width: 100%;
 }
-.container3 div {
+.box-3 {
   border: 12px solid white;
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   background: rgba(0,0,0,.2);
+  flex:1;
+  flex-wrap: wrap;
 }
+
 h2{
     text-align: center;
     color: black;
-    font-size: 230%;
-}
- .box-2, .box-3{
-    flex: 1;
-    width: 100%;
-}
-@media screen and (max-width: 600px){
- .box-3{
-    width: 50%;
-  }
-}
-.caption2{
-  position: relative;
+    font-size: 180%;
+} 
+.fig2, .caption1, .fig3{
+  flex:1;
 }
 .fig2, .fig3{
   width: 100%;
+  height: 150px;
 }
+  
+.readM{
+  align-items: flex-end;
+  align-self: flex-end;
+  align-content: flex-end;
+  color: rgba(0,0,0,.8);
+  text-decoration: none;
+}
+.content2{
+  flex: 1;
+}
+.quote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/qb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255,240,245);
+  padding: 10px;
+}
+
+
+/* hero part starts */
 .container1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dessert.resized.jpg");
   height: 95%;
@@ -123,6 +202,9 @@ h2{
   font-size: 130%;
   font-family: 'Bree Serif', serif;
 }
+/* hero part ends */
+
+/* header part starts */
 button{
   background: rgba(0,0,0,.8);
   color: white;
@@ -134,7 +216,7 @@ button:hover{
   background: rgba(0,0,0,.2);
 }
 header {
-  background: rgba(255,240,245);
+  background: rgb(255,240,245);
   text-align: left;
   position: fixed;
   z-index: 999;
@@ -145,10 +227,10 @@ h1{
 }
 nav  {
   position: absolute;
-  text-align: right;
+  text-align: left;
   top: 100%;
   padding-right: 20px;
-  background: rgba(255,240,245);;
+  background: rgb(255,240,245);;
   width: 100%;
 }
 .nav-toggle-label {
@@ -190,19 +272,17 @@ nav ul {
   list-style: none;
   display: none;
 }
-
 nav li {
   margin-bottom: 16px;
   margin-left: 16px;
 }
-
-nav a, .container2 a, .container3 a {
+nav a, .container2 h3 a, .container3 h3 a {
   color: rgba(0,0,0,.8);
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
 }
-.container2 a:hover, .container3 a:hover{
+.container2 a:hover, .container3 a:hover, footer a:hover{
   text-decoration: underline dotted;
 }
 nav a:hover {
@@ -245,3 +325,4 @@ nav a:hover {
     line-height: 43px;
   } 
 }
+/* header part ends */
