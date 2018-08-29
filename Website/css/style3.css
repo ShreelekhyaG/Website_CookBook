@@ -70,7 +70,7 @@ footer{
 }
 }
 /* Footer part ends */
-.videos  {
+/*.videos  {
    background-color: #fff;
   min-width: 100%;
 min-height: 200px;
@@ -84,7 +84,7 @@ overflow-x: auto;
   min-width: 200px;
   margin: 5px;
   padding: 10px;
-}
+}*/
 .recipe{
   flex:2;
   border-bottom: 2px solid white;
