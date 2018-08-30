@@ -70,21 +70,6 @@ footer{
 }
 }
 /* Footer part ends */
-.videos  {
-   background-color: #fff;
-  min-width: 100%;
-min-height: 200px;
-display: flex;
-overflow-x: auto;
-}
-/*.videos::-webkit-scrollbar {
-  display: none;
-}*/
-.videos img {
-  min-width: 200px;
-  margin: 5px;
-  padding: 10px;
-}
 .recipe{
   flex:2;
   border-bottom: 2px solid white;
@@ -125,19 +110,15 @@ overflow-x: auto;
 @media screen and (min-width: 1000px){
   .recipe{
     height: 100%;
-
     display: flex;
   }
   .fig4{
     height: 100%;
   }
 }
-
-
 .recipe ul{
   list-style-type: decimal;
 }
-
 .contribute{
   flex:1;
   padding: 10px;
@@ -190,7 +171,6 @@ overflow-x: auto;
   flex:1;
   flex-wrap: wrap;
 }
-
 h2{
     text-align: center;
     color: black;
@@ -202,8 +182,7 @@ h2{
 .fig2, .fig3{
   width: 100%;
   height: 150px;
-}
-  
+} 
 .readM{
   align-items: flex-end;
   align-self: flex-end;
@@ -362,8 +341,7 @@ nav a:hover {
     display: flex;
     margin: 0;
     padding: 0 100px;
-  }
-  
+  } 
   nav a{
     display: block;
     padding: 0px 20px;
