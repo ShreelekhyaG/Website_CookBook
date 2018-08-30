@@ -44,6 +44,7 @@ footer a{
 }
 .fab{
   padding-left: 22px;
+  padding-bottom: 22px;
   font-size: 20px;
   position: relative;  
 }
@@ -62,10 +63,16 @@ footer a{
 .links ul li:last-child:after{
   content: none;
 }
+.fab{
+  padding-bottom: 0px;
+}
 }
 @media screen and (min-width: 650px){
 footer{
   flex-direction: row;
+}
+.fab{
+  padding-bottom: 0px;
 }
 .media{
   justify-content: flex-end;
