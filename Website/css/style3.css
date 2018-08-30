@@ -70,21 +70,21 @@ footer{
 }
 }
 /* Footer part ends */
-/*.videos  {
+.videos  {
    background-color: #fff;
   min-width: 100%;
 min-height: 200px;
 display: flex;
 overflow-x: auto;
 }
-.videos::-webkit-scrollbar {
+/*.videos::-webkit-scrollbar {
   display: none;
-}
+}*/
 .videos img {
   min-width: 200px;
   margin: 5px;
   padding: 10px;
-}*/
+}
 .recipe{
   flex:2;
   border-bottom: 2px solid white;
@@ -142,15 +142,17 @@ overflow-x: auto;
   flex:1;
   padding: 10px;
 }
-@media screen and (max-width: 550px){
- .box-3{
+.box-3{
     min-width: 50%;
     max-width: 50%;
+}
+@media screen and (min-width: 550px){
+ .box-3{
+    min-width: 25%;
+    max-width: 25%;
   }
-  
 }
 @media screen and (min-width: 475px) and (max-width: 550px){
- 
   .fig2{
     max-width: 50%;
     float: left;
@@ -161,8 +163,7 @@ overflow-x: auto;
     padding-top: 0;
     text-align: justify-all;
   }
-  }
-
+}
 .container2 {
     flex-wrap: wrap;
   } 
@@ -172,9 +173,7 @@ overflow-x: auto;
   display: flex;
   overflow-x: auto;
 }
-.card::-webkit-scrollbar {
-  display: none;
-}
+
 .box-2, .container4{
   border: 12px solid white;
   padding: 10px;
