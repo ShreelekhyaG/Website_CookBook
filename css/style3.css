@@ -6,7 +6,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body {
 	margin: 0;
 	font-family: 'Work Sans', sans-serif;
@@ -215,8 +214,6 @@ h2{
   color: rgb(255,240,245);
   padding: 10px;
 }
-
-
 /* hero part starts */
 .container1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dessert.resized.jpg");
@@ -357,5 +354,8 @@ nav a:hover {
     padding: 0px 20px;
     line-height: 43px;
   } 
+  .fig2, .fig3{
+    height: 190px;
+  }
 }
 /* header part ends */
