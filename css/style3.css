@@ -24,7 +24,7 @@ footer{
   flex: 2;
   justify-content: center;
 }
-.links ul{
+.links, .media{
   list-style: none;
 }
 .media{
@@ -33,6 +33,7 @@ footer{
   display: flex;
   align-items: center;
   padding-left: 20px;
+  margin:0;
 }
 footer a{
   display: inline;
@@ -52,18 +53,15 @@ footer a{
 }
 @media screen and (min-width: 405px){
 
-.links ul li{
+.links li{
   display: inline;
 }
-.links ul li:after{
+.links li:after{
   padding: 10px;
   content:'|';
 }
-.links ul li:last-child:after{
+.links li:last-child:after{
   content: none;
-}
-.fab{
-  padding-bottom: 0px;
 }
 }
 @media screen and (min-width: 650px){
