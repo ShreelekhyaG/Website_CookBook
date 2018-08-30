@@ -251,7 +251,7 @@ h1{
 }
 nav  {
   position: absolute;
-  text-align: center;
+  text-align: left;
   top: 100%;
   padding-right: 20px;
   background: rgb(255,240,245);;
