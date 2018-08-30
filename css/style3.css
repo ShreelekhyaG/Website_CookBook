@@ -47,6 +47,9 @@ footer a{
   font-size: 20px;
   position: relative;  
 }
+.media a:hover{
+  font-size: 30px;
+}
 @media screen and (min-width: 405px){
 
 .links ul li{
@@ -306,7 +309,7 @@ nav a, .container2 h3 a, .container3 h3 a, .container4 a {
   font-size: 18px;
   text-transform: uppercase;
 }
-.container2 a:hover, .container3 a:hover,.container4 a:hover, footer a:hover{
+.container2 a:hover, .container3 a:hover,.container4 a:hover, .links a:hover{
   text-decoration: underline dotted;
 }
 nav a:hover {
