@@ -82,45 +82,37 @@ footer{
   border-bottom: 2px solid white;
   padding: 10px;
 }
-.fig4{
-  width: 100%;
-  height: 100px;
-}
 @media screen and (min-width: 550px){
   footer{
    display: flex;
   }
-  .container1 {
+  .hero-container {
     display: flex;
   }
-  .container2 {
+  .info-container {
     display: flex;
   }
-  .container4{
+  .recipe-container{
     display: flex;
     flex-direction: row;
   }
-  .container3 {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  
   .recipe{
     border-right: 2px solid white;
     border-bottom: 0px;
     height: 100%;
   }
-  .fig4{
-    width: 90%;
-    padding: 10px;
-  }
 }
+@media screen and (min-width: 800px){
+  .spices-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  }
 @media screen and (min-width: 1000px){
   .recipe{
     height: 100%;
     display: flex;
-  }
-  .fig4{
-    height: 100%;
   }
 }
 .recipe ul{
@@ -130,46 +122,63 @@ footer{
   flex:1;
   padding: 10px;
 }
-.box-3{
+.spices-box{
+    min-width: 100%;
+    max-width: 100%;
+}
+.spices-container{
+  overflow-x: auto;
+}
+@media screen and (min-width: 440px){
+ .spices-box{
     min-width: 50%;
     max-width: 50%;
+  }
+
 }
-@media screen and (min-width: 550px){
- .box-3{
+@media screen and (min-width: 700px){
+ .spices-box{
+    min-width: 33.33%;
+    max-width: 33.33%;
+  }
+
+}
+@media screen and (min-width: 800px){
+ .spices-box{
     min-width: 25%;
     max-width: 25%;
   }
 }
 @media screen and (min-width: 475px) and (max-width: 550px){
-  .fig2{
+  .info-fig{
     max-width: 50%;
     float: left;
     padding: 10px;
     padding-left: 15px;
   }
-  .content, .h3 .caption2{
+  .content, .h3 .info-caption{
     padding-top: 0;
     text-align: justify-all;
   }
 }
-.container2 {
+.info-container {
     flex-wrap: wrap;
   } 
-.container3{
+.spices-container{
   min-width: 100%;
   min-height: 400px;
   display: flex;
   overflow-x: auto;
 }
 
-.box-2, .container4{
+.info-box, .recipe-container{
   border: 12px solid white;
   padding: 10px;
   background: rgba(0,0,0,.2);
   flex: 1;
   width: 100%;
 }
-.box-3{
+.spices-box{
   border: 12px solid white;
   display: flex;
   flex-direction: column;
@@ -183,10 +192,10 @@ h2{
     color: black;
     font-size: 180%;
 } 
-.fig2, .caption1, .fig3{
+.info-fig, .caption1, .spices-fig{
   flex:1;
 }
-.fig2, .fig3{
+.info-fig, .spices-fig{
   width: 100%;
   height: 150px;
 } 
@@ -197,7 +206,7 @@ h2{
   color: rgba(0,0,0,.8);
   text-decoration: none;
 }
-.content2{
+.spices-box-content{
   flex: 1;
 }
 .quote{
@@ -213,15 +222,15 @@ h2{
   padding: 10px;
 }
 /* hero part starts */
-.container1 {
+.hero-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dessert.resized.jpg");
-  height: 95%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-.box-1{
+.hero-text{
   text-align: center;
   position: absolute;
   top: 50%;
@@ -305,13 +314,13 @@ nav li {
   margin-bottom: 16px;
   margin-left: 16px;
 }
-nav a, .container2 h3 a, .container3 h3 a, .container4 a {
+nav a, .info-container h3 a, .spices-container h3 a, .recipe-container a {
   color: rgba(0,0,0,.8);
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
 }
-.container2 a:hover, .container3 a:hover,.container4 a:hover, .links a:hover{
+.info-container a:hover, .spices-container a:hover,.recipe-container a:hover, .links a:hover{
   text-decoration: underline dotted;
 }
 nav a:hover {
@@ -352,7 +361,7 @@ nav a:hover {
     padding: 0px 20px;
     line-height: 43px;
   } 
-  .fig2, .fig3{
+  .info-fig, .spices-fig{
     height: 190px;
   }
 }
